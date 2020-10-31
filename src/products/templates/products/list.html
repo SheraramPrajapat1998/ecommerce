@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}  
+  {% if category %}
+    {{ category.name }}
+  {% else %} 
+    Products 
+  {% endif %}
+{% endblock title %}
+
+{% block content %}
+  <div class="row">    
+    <!-- <div class="col"> -->
+      <!-- <div id="sidebar">
+        <h3>Categories</h3>
+        <ul class="list-group">
+          <li class="list-group-item {% if not category %}active{% endif %}"> <a href="{% url 'products:product_list' %}">Products</a></li>
+          
+          {% for c in categories %}
+          <li class="list-group-item {% if category.slug == c.slug %}active{% endif %}">
+            <a href="{{ c.get_absolute_url }}">{{ c.name }}</a>
+          </li>
+          {% endfor %}
+        </ul>          
+      </div>   -->
+
+        <!-- <div id="main" class="product-list border"> -->
+          <h1 class="m-2 text-center container">{% if category %}{{ category.name }}{% else %}Products {% endif %}</h1>
+          {% for product in products %}
+            <div class="col-lg-4">
+              <img src="{{ product.image.url }}" alt="product_pic" class="thumbnail rounded">
+              <div class="box-element product">
+                  <a class="text-decoration-none" href="{{ product.get_absolute_url }}">
+                    <strong>{{ product.name }}</strong>
+                  </a>
+                <hr>
+
+                <button class="btn btn-outline-secondary rounded">Add to Cart</button>
+                <a class="btn btn-outline-success rounded" href="{{ product.get_absolute_url }}">View</a>
+                <h4 style="display: inline-block; float: right"><strong>${{product.price}}</strong></h4>
+        
+              </div>
+            </div>
+          {% endfor %}
+        <!-- </div> -->
+      </div>
+    <!-- </div> -->
+    
+  </div>
+{% endblock content %}
+  
