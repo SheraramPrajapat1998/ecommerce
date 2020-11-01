@@ -34,7 +34,8 @@ INSTALLED_APPS = [
     # local apps
     'products.apps.ProductsConfig',
     'cart.apps.CartConfig',
-    
+    'orders.apps.OrdersConfig',
+
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -44,6 +45,7 @@ INSTALLED_APPS = [
 
     #  third party apps
     'sorl.thumbnail',
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -135,3 +137,5 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'static_cdn', 'media_root')
 
 CART_SESSION_ID = 'cart'
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'

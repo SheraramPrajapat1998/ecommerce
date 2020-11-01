@@ -9,7 +9,7 @@
 <div class="row">
   <div class="col-lg-12">
       <h1>Your shopping cart</h1>
-      <div class="box-element">        
+      <div class="box-element table-responsive-lg">   
         <table class="table  table-bordered table-hover">
           <thead class="thead-light">
             <tr>
@@ -51,7 +51,7 @@
               {% endwith %}
             {% endfor %}
             <tr class="total">
-              <td>Total</td>
+              <td><strong> Total</strong></td>
               <td colspan="4"></td>
               <td class="num">${{ cart.get_total_price }}</td>
             </tr>
@@ -59,11 +59,11 @@
         </table>
       </div>
 
-      <p class="text-right">
+      <p class="text-right mt-2">
         <a href="{% url 'products:product_list' %}" class="btn btn-outline-secondary rounded">
           &#x2190; Continue shopping
         </a>
-        <a href="#" class="btn btn-success rounded">Checkout</a>
+        <a href="{% url 'orders:order_create' %}" class="btn btn-success rounded">Checkout</a>
       </p>
     </div>
   </div>  

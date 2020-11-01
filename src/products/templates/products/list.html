@@ -28,7 +28,7 @@
         <!-- <div id="main" class="product-list border"> -->
           <h1 class="m-2 text-center container">{% if category %}{{ category.name }}{% else %}Products {% endif %}</h1>
           {% for product in products %}
-            <div class="col-lg-4">
+            <div class="col-md-6 col-lg-4">
               <a href="{{ product.get_absolute_url }}">                
                 <img src="{{ product.image.url }}" alt="product_pic" class="thumbnail rounded">
               </a>
