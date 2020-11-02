@@ -8,15 +8,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-02 16:38+0530\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2020-11-02 18:20+0530\n"
+"PO-Revision-Date: 2020-11-02 18:29+0553\n"
+"Last-Translator: b'  <>'\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.9.5\n"
 
 #: .\orders\models.py:9
 msgid "first name"
@@ -45,15 +46,19 @@ msgstr "ciudad"
 #: .\orders\templates\orders\order\create.html:6
 #: .\orders\templates\orders\order\create.html:13
 msgid "Checkout"
-msgstr ""
+msgstr "Revisa"
 
 #: .\orders\templates\orders\order\create.html:18
 msgid "Place order"
-msgstr ""
+msgstr "Realizar pedido"
+
+#: .\orders\templates\orders\order\create.html:25
+msgid "Back to Cart"
+msgstr "Volver al carrito"
 
 #: .\orders\templates\orders\order\create.html:28
 msgid "Order Summery"
-msgstr ""
+msgstr "Resumen del pedido"
 
 #: .\orders\templates\orders\order\create.html:39
 #, python-format
@@ -62,11 +67,13 @@ msgid ""
 "                \"%(code)s\" (%(discount)s%% off)\n"
 "              "
 msgstr ""
+"\n"
+"\"%(code)s\" cupón (%(discount)s%% apagado)"
 
 #: .\orders\templates\orders\order\create.html:47
 msgid "Total"
-msgstr ""
+msgstr "Total"
 
 #: .\orders\urls.py:9
 msgid "create/"
-msgstr ""
+msgstr "crear/"

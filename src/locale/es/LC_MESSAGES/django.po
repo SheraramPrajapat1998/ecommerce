@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-02 16:38+0530\n"
-"PO-Revision-Date: 2020-11-02 16:39+0553\n"
+"POT-Creation-Date: 2020-11-02 18:20+0530\n"
+"PO-Revision-Date: 2020-11-02 18:25+0553\n"
 "Last-Translator: b'  <>'\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -23,15 +23,23 @@ msgstr ""
 msgid "Quantity"
 msgstr "Cantidad"
 
+#: .\cart\templates\cart\detail.html:93
+msgid "Continue shopping"
+msgstr "Seguir comprando"
+
+#: .\cart\templates\cart\detail.html:95
+msgid "Checkout"
+msgstr "Revisa"
+
 #: .\coupons\forms.py:5
 msgid "Coupon"
 msgstr "Cupón"
 
-#: .\ecommerce\settings.py:123
+#: .\ecommerce\settings.py:124
 msgid "English"
 msgstr "Inglés"
 
-#: .\ecommerce\settings.py:124
+#: .\ecommerce\settings.py:125
 msgid "Spanish"
 msgstr "Español"
 
@@ -48,14 +56,20 @@ msgid "orders/"
 msgstr "pedidos/"
 
 #: .\ecommerce\urls.py:26
-#, fuzzy
-#| msgid "Coupon"
 msgid "coupons/"
 msgstr "Cupón"
 
 #: .\products\templates\products\detail.html:25
 msgid "Add to cart"
 msgstr "Añadir al carrito"
+
+#: .\products\templates\products\list.html:9
+msgid "Products"
+msgstr "Productos"
+
+#: .\products\templates\products\list.html:49
+msgid "View"
+msgstr "Ver"
 
 #: .\templates\base.html:17 .\templates\navbar.html:11
 msgid "Ecommerce"
@@ -69,7 +83,10 @@ msgstr "Tienda"
 msgid "Language"
 msgstr "Idioma"
 
+#: .\templates\navbar.html:41
+msgid "Login"
+msgstr "Iniciar sesión"
+
 #: .\templates\navbar.html:43
-#| msgid "Add to cart"
 msgid "Your cart"
 msgstr "Añadir al carrito"

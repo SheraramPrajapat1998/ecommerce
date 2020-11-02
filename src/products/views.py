@@ -6,10 +6,11 @@ from cart.forms import CartAddProductForm
 def product_list(request, category_slug=None):
   category = None
   categories = Category.objects.all()
-  products = Product.objects.available()
+  products = Product.objects.filter(available=True)
 
+  language = request.LANGUAGE_CODE
   if category_slug:
-    category = get_object_or_404(Category, slug=category_slug)
+    category = get_object_or_404(Category, translations__language_code=language, translations__slug=category_slug)
     products = products.filter(category=category)
 
   cart_product_form = CartAddProductForm()
@@ -23,7 +24,9 @@ def product_list(request, category_slug=None):
   return render(request, 'products/list.html', context)
 
 def product_detail(request, slug, id):
-  product = get_object_or_404(Product, slug=slug, id=id, available=True)
+  language = request.LANGUAGE_CODE
+  product = get_object_or_404(Product, translations__language_code=language, translations__slug=slug, available=True)
+  print(product)
   cart_product_form = CartAddProductForm()
   context = {
     'product': product,

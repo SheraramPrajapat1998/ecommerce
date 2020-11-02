@@ -1,11 +1,12 @@
 {% extends 'base.html' %}
+{% load i18n %}
 {% load static %}
 
 {% block title %}  
   {% if category %}
     {{ category.name }}
   {% else %} 
-    Products 
+    {% trans "Products" %}
   {% endif %}
 {% endblock title %}
 
@@ -45,7 +46,7 @@
                   <button class="btn btn-outline-secondary rounded" type="submit">Add to Cart</button>
                   <button type="submit" value="Add to cart" class="btn btn-outline-dark rounded">Add to </button>                  
                 </form> -->
-                <a class="btn btn-outline-success rounded" href="{{ product.get_absolute_url }}">View</a>
+                <a class="btn btn-outline-success rounded" href="{{ product.get_absolute_url }}">{% trans "View" %}</a>
                 <h4 style="display: inline-block; float: right"><strong>${{product.price}}</strong></h4>
         
               </div>
