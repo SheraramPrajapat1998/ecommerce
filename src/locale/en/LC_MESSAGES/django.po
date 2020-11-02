@@ -1,0 +1,71 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-11-02 16:38+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\cart\forms.py:9
+msgid "Quantity"
+msgstr ""
+
+#: .\coupons\forms.py:5
+msgid "Coupon"
+msgstr ""
+
+#: .\ecommerce\settings.py:123
+msgid "English"
+msgstr ""
+
+#: .\ecommerce\settings.py:124
+msgid "Spanish"
+msgstr ""
+
+#: .\ecommerce\urls.py:23
+msgid "admin/"
+msgstr ""
+
+#: .\ecommerce\urls.py:24
+msgid "cart/"
+msgstr ""
+
+#: .\ecommerce\urls.py:25
+msgid "orders/"
+msgstr ""
+
+#: .\ecommerce\urls.py:26
+msgid "coupons/"
+msgstr ""
+
+#: .\products\templates\products\detail.html:25
+msgid "Add to cart"
+msgstr ""
+
+#: .\templates\base.html:17 .\templates\navbar.html:11
+msgid "Ecommerce"
+msgstr ""
+
+#: .\templates\navbar.html:19
+msgid "Store"
+msgstr ""
+
+#: .\templates\navbar.html:29
+msgid "Language"
+msgstr ""
+
+#: .\templates\navbar.html:43
+msgid "Your cart"
+msgstr ""

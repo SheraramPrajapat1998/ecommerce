@@ -1,18 +1,14 @@
+{% load i18n %}
 {% url 'login' as path_to_login %}
 {% url 'logout' as path_to_logout %}
 {% url 'register' as path_to_register %}
 
 {% url 'products:product_list' as path_to_product_list %}
-{% url 'posts:myposts' as path_to_myposts %}
-{% url 'profiles:myprofile' as path_to_my_profile %}
-{% url 'profiles:my-invites' as path_to_my_invites %}
-{% url 'profiles:invite-profiles' as path_to_invites %}
-{% url 'profiles:all-profiles' as path_to_all_profiles %}
 
 {% load static %}
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="{{ path_to_product_list }}">Ecommerce</a>
+  <a class="navbar-brand" href="{{ path_to_product_list }}">{% trans 'Ecommerce' %}</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -20,14 +16,31 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="{{ path_to_product_list }}">Store</a>
+        <a class="nav-link" href="{{ path_to_product_list }}">{% trans "Store" %}</a>
       </li>
  
     </ul>
+
+    {% get_current_language as LANGUAGE_CODE %}
+    {% get_available_languages as LANGUAGES %}
+    {% get_language_info_list for LANGUAGES as languages %}
+    <!-- <div class="languages"> -->
+      <ul class="navbar-nav languages mr-auto">
+        <p class="m-auto text-warning">{% trans "Language" %}:</p>
+        {% for language in languages %}
+          <li class="nav-item {% if language.code == LANGUAGE_CODE %}active{% endif %}">
+            <a href="/{{ language.code }}/" class="nav-link">
+              {{ language.name_local }}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    <!-- </div> -->
+
     <div class="form-inline my-2 my-lg-0">
       <a href="#"class="btn btn-warning">Login</a>
       <a href="{% url 'cart:cart_detail' %}">
-        <i class="fas fa-shopping-cart fa-2x text-dark mx-2"></i>
+        <i class="fas fa-shopping-cart text-dark mx-2 box-element"> {% trans "Your cart" %}</i>
       </a>
       <p id="cart-total">{{cart|length}}</p>
 

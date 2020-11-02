@@ -1,0 +1,75 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-11-02 16:38+0530\n"
+"PO-Revision-Date: 2020-11-02 16:39+0553\n"
+"Last-Translator: b'  <>'\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.9.5\n"
+
+#: .\cart\forms.py:9
+msgid "Quantity"
+msgstr "Cantidad"
+
+#: .\coupons\forms.py:5
+msgid "Coupon"
+msgstr "Cupón"
+
+#: .\ecommerce\settings.py:123
+msgid "English"
+msgstr "Inglés"
+
+#: .\ecommerce\settings.py:124
+msgid "Spanish"
+msgstr "Español"
+
+#: .\ecommerce\urls.py:23
+msgid "admin/"
+msgstr "administración/"
+
+#: .\ecommerce\urls.py:24
+msgid "cart/"
+msgstr "carro/"
+
+#: .\ecommerce\urls.py:25
+msgid "orders/"
+msgstr "pedidos/"
+
+#: .\ecommerce\urls.py:26
+#, fuzzy
+#| msgid "Coupon"
+msgid "coupons/"
+msgstr "Cupón"
+
+#: .\products\templates\products\detail.html:25
+msgid "Add to cart"
+msgstr "Añadir al carrito"
+
+#: .\templates\base.html:17 .\templates\navbar.html:11
+msgid "Ecommerce"
+msgstr "Comercio electrónico"
+
+#: .\templates\navbar.html:19
+msgid "Store"
+msgstr "Tienda"
+
+#: .\templates\navbar.html:29
+msgid "Language"
+msgstr "Idioma"
+
+#: .\templates\navbar.html:43
+#| msgid "Add to cart"
+msgid "Your cart"
+msgstr "Añadir al carrito"

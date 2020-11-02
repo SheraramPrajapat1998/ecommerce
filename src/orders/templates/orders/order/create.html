@@ -1,20 +1,21 @@
 {% extends 'base.html' %}
+{% load i18n %}
 {% load crispy_forms_tags %}
 
 {% block title %}
-  Checkout
+  {% trans "Checkout" %}
 {% endblock %}
 
 {% block content %}
 <div class="row">
   <div class="col-lg-6">
       <div class="box-element p-4" id="form-wrapper">
-        <h1>Checkout</h1>
+        <h1>{% trans "Checkout" %}</h1>
         <div class="form-group">
           <form method="post" class="order-form">
             {{ form|crispy }}
             {% csrf_token %}
-            <input type="submit" class="btn btn-primary d-block" value="Place order">
+            <input type="submit" class="btn btn-primary d-block" value="{% trans 'Place order' %}">
           </form>
         </div>
     </div>
@@ -24,7 +25,7 @@
       <a href="{% url 'cart:cart_detail' %}" class="btn btn-outline-dark">&#x2190; Back to Cart</a>
       <hr>
       <div class="border-bottom border-primary box-element pb-5" style="background-color:#eee; border-width: 3px !important;">        
-        <h3>Order Summery</h3>
+        <h3>{% trans "Order Summery" %}</h3>
         <hr>
         <ul>
           {% for item in cart %}
@@ -35,13 +36,15 @@
           {% endfor %}
           {% if cart.coupon %}
             <li>
-              "{{ cart.coupon.code }}" ({{ cart.coupon.discount }}% off)
+              {% blocktrans with code=cart.coupon.code discount=cart.coupon.discount %}
+                "{{ code }}" ({{ discount }}% off)
+              {% endblocktrans %}
               <span class="num neg float-right">- ${{ cart.get_discount|floatformat:2 }}</span>
             </li>
           {% endif %}
         </ul>
         <p class="border-bottom border-primary num float-right" style="border-width: 4px !important;">
-          <strong> Total: ${{ cart.get_total_price_after_discount|floatformat:2 }}</strong>
+          <strong> {% trans "Total" %}: ${{ cart.get_total_price_after_discount|floatformat:2 }}</strong>
         </p>
       </div>
     </div>

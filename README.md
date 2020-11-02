@@ -20,3 +20,16 @@
     - Coupon
     * coupon functionality *    - cart
                                 - order
+                                - admin section(in order detail, pdf view)
+
+
+
+
+
+
+
+
+Notes:
+Windows Erros and links to solve 
+    CommandError: Can't find msguniq. Make sure you have GNU gettext tools 0.15 or newer installed.
+    https://stackoverflow.com/questions/33841832/cant-find-msguniq-django-1-8-windows-7-64-bit
