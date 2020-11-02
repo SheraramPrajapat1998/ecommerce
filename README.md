@@ -15,3 +15,8 @@
     ** Admin site functionality **  - order detail
                                     - export to CSV
                                     - pdf view
+
+### 4.  coupons
+    - Coupon
+    * coupon functionality *    - cart
+                                - order

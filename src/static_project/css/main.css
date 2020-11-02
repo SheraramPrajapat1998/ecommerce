@@ -66,10 +66,10 @@ h1,h2,h3,h4,h5,h6{
 
 .cart-row{
 	display: flex;
-    align-items: flex-stretch;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
-    border-bottom: 1px solid #ececec;
+  align-items: flex-stretch;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ececec;
 
 }
 
@@ -77,8 +77,6 @@ h1,h2,h3,h4,h5,h6{
 	display: inline-block;
 	font-weight: 700;
 	padding-right:10px;
-	
-
 }
 
 .chg-quantity{
@@ -98,6 +96,24 @@ h1,h2,h3,h4,h5,h6{
 	display: none!important;
 }
 
+.neg{
+  color: red;
+  font-weight: bold;
+}
+
+.num{
+  font-weight: bold;
+}
+
+.subtotal{
+  background-color: lightblue;
+  font-weight: bold;;
+}
+
+.total{
+  background-color: #007BFF; 
+  color: #fff;
+}
 
 /* a{
   text-decoration: none;
@@ -165,7 +181,7 @@ td input[type="submit"] {
   font-size:12px;
   padding:4px 10px;
 }
-
+ */
 form p label, form p input {
   float:left;
   clear:both;
@@ -186,7 +202,7 @@ form p input {
   color:#666;
   border-radius:4px;
 }
-
+/* 
 ul.errorlist {
  float:left;
  color:#ff0000;
