@@ -123,6 +123,7 @@ LANGUAGE_CODE = 'en'
 LANGUAGES = (
     ('en', _('English')),
     ('es', _('Spanish')),
+    ('hi', _('Hindi')),
 )
 
 LOCALE_PATHS = (
@@ -133,6 +134,7 @@ PARLER_LANGUAGES = {
     None:(        
         {'code': 'en'},
         {'code': 'es'},
+        {'code': 'hi'},
     ),
     'default': {
         'fallback': 'en',
@@ -164,3 +166,5 @@ MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'static_cdn', 'media_root')
 CART_SESSION_ID = 'cart'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+ALLOW_UNICODE_SLUGS = True

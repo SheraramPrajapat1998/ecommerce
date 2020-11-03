@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-02 18:20+0530\n"
+"POT-Creation-Date: 2020-11-02 19:49+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,6 +42,10 @@ msgstr ""
 msgid "Spanish"
 msgstr ""
 
+#: .\ecommerce\settings.py:126
+msgid "Hindi"
+msgstr ""
+
 #: .\ecommerce\urls.py:23
 msgid "admin/"
 msgstr ""
@@ -63,6 +67,7 @@ msgid "Add to cart"
 msgstr ""
 
 #: .\products\templates\products\list.html:9
+#: .\products\templates\products\list.html:30
 msgid "Products"
 msgstr ""
 

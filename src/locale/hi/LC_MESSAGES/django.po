@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-11-02 19:49+0530\n"
-"PO-Revision-Date: 2020-11-02 19:01+0553\n"
+"PO-Revision-Date: 2020-11-03 07:53+0553\n"
 "Last-Translator: b'  <>'\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -21,77 +21,77 @@ msgstr ""
 
 #: .\cart\forms.py:9
 msgid "Quantity"
-msgstr "Cantidad"
+msgstr "मात्रा"
 
 #: .\cart\templates\cart\detail.html:93
 msgid "Continue shopping"
-msgstr "Seguir comprando"
+msgstr "खरीदारी जारी रखें"
 
 #: .\cart\templates\cart\detail.html:95
 msgid "Checkout"
-msgstr "Revisa"
+msgstr "चेक आउट"
 
 #: .\coupons\forms.py:5
 msgid "Coupon"
-msgstr "Cupón"
+msgstr "कूपन"
 
 #: .\ecommerce\settings.py:124
 msgid "English"
-msgstr "Inglés"
+msgstr "अंग्रेज़ी"
 
 #: .\ecommerce\settings.py:125
 msgid "Spanish"
-msgstr "Español"
+msgstr "स्पेनिश"
 
 #: .\ecommerce\settings.py:126
 msgid "Hindi"
-msgstr "hindi"
+msgstr "हिंदी"
 
 #: .\ecommerce\urls.py:23
 msgid "admin/"
-msgstr "administración/"
+msgstr "व्यवस्थापक/"
 
 #: .\ecommerce\urls.py:24
 msgid "cart/"
-msgstr "carro/"
+msgstr "कार्ट/"
 
 #: .\ecommerce\urls.py:25
 msgid "orders/"
-msgstr "pedidos/"
+msgstr "आदेशों/"
 
 #: .\ecommerce\urls.py:26
 msgid "coupons/"
-msgstr "Cupón"
+msgstr "कूपन/"
 
 #: .\products\templates\products\detail.html:25
 msgid "Add to cart"
-msgstr "Añadir al carrito"
+msgstr "कार्ट में डालें"
 
 #: .\products\templates\products\list.html:9
 #: .\products\templates\products\list.html:30
 msgid "Products"
-msgstr "Productos"
+msgstr "उत्पाद"
 
 #: .\products\templates\products\list.html:49
 msgid "View"
-msgstr "Ver"
+msgstr "राय"
 
 #: .\templates\base.html:17 .\templates\navbar.html:11
 msgid "Ecommerce"
-msgstr "Comercio electrónico"
+msgstr "ई-कॉमर्स"
 
 #: .\templates\navbar.html:19
 msgid "Store"
-msgstr "Tienda"
+msgstr "दुकान"
 
 #: .\templates\navbar.html:29
 msgid "Language"
-msgstr "Idioma"
+msgstr "भाषा"
 
 #: .\templates\navbar.html:41
 msgid "Login"
-msgstr "Iniciar sesión"
+msgstr "लॉग इन करें"
 
 #: .\templates\navbar.html:43
 msgid "Your cart"
-msgstr "Añadir al carrito"
+msgstr "आपका कार्ट"
