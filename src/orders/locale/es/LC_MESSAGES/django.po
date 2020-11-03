@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-02 19:49+0530\n"
-"PO-Revision-Date: 2020-11-02 18:29+0553\n"
+"POT-Creation-Date: 2020-11-03 10:02+0530\n"
+"PO-Revision-Date: 2020-11-03 10:06+0553\n"
 "Last-Translator: b'  <>'\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -73,6 +73,25 @@ msgstr ""
 #: .\orders\templates\orders\order\create.html:47
 msgid "Total"
 msgstr "Total"
+
+#: .\orders\templates\orders\order\created.html:10
+msgid "Thank you"
+msgstr "Gracias"
+
+#: .\orders\templates\orders\order\created.html:11
+msgid "Your order has been successfully completed. Your order number is"
+msgstr ""
+"Su orden ha sido completada satisfactoriamente. tu numero de orden es "
+
+#: .\orders\templates\orders\order\created.html:12
+#, python-format
+msgid ""
+"\n"
+"      <strong>%(order_id)s</strong> dated %(order_created)s    \n"
+"    "
+msgstr ""
+"\n"
+"<strong>%(order_id)s</strong>Fechada%(order_created)s"
 
 #: .\orders\urls.py:9
 msgid "create/"

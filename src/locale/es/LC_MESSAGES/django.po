@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-02 19:49+0530\n"
+"POT-Creation-Date: 2020-11-03 10:02+0530\n"
 "PO-Revision-Date: 2020-11-02 19:01+0553\n"
 "Last-Translator: b'  <>'\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -35,15 +35,15 @@ msgstr "Revisa"
 msgid "Coupon"
 msgstr "Cupón"
 
-#: .\ecommerce\settings.py:124
+#: .\ecommerce\settings.py:125
 msgid "English"
 msgstr "Inglés"
 
-#: .\ecommerce\settings.py:125
+#: .\ecommerce\settings.py:126
 msgid "Spanish"
 msgstr "Español"
 
-#: .\ecommerce\settings.py:126
+#: .\ecommerce\settings.py:127
 msgid "Hindi"
 msgstr "hindi"
 
