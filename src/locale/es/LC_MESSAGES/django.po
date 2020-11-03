@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-03 10:02+0530\n"
-"PO-Revision-Date: 2020-11-02 19:01+0553\n"
+"POT-Creation-Date: 2020-11-03 21:24+0530\n"
+"PO-Revision-Date: 2020-11-03 17:32+0553\n"
 "Last-Translator: b'  <>'\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -22,6 +22,22 @@ msgstr ""
 #: .\cart\forms.py:9
 msgid "Quantity"
 msgstr "Cantidad"
+
+#: .\cart\templates\cart\detail.html:57
+msgid "Subtotal"
+msgstr ""
+
+#: .\cart\templates\cart\detail.html:73
+msgid "Total"
+msgstr ""
+
+#: .\cart\templates\cart\detail.html:81
+msgid "Apply a coupon:"
+msgstr ""
+
+#: .\cart\templates\cart\detail.html:84
+msgid "Apply"
+msgstr ""
 
 #: .\cart\templates\cart\detail.html:93
 msgid "Continue shopping"
@@ -72,7 +88,11 @@ msgstr "Añadir al carrito"
 msgid "Products"
 msgstr "Productos"
 
-#: .\products\templates\products\list.html:49
+#: .\products\templates\products\list.html:19
+msgid "Categories"
+msgstr "Categorías"
+
+#: .\products\templates\products\list.html:43
 msgid "View"
 msgstr "Ver"
 

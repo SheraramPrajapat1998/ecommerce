@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-03 10:02+0530\n"
-"PO-Revision-Date: 2020-11-03 10:06+0553\n"
+"POT-Creation-Date: 2020-11-03 21:24+0530\n"
+"PO-Revision-Date: 2020-11-03 16:58+0553\n"
 "Last-Translator: b'  <>'\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -48,20 +48,28 @@ msgstr "ciudad"
 msgid "Checkout"
 msgstr "Revisa"
 
-#: .\orders\templates\orders\order\create.html:18
+#: .\orders\templates\orders\order\create.html:19
 msgid "Place order"
 msgstr "Realizar pedido"
 
-#: .\orders\templates\orders\order\create.html:25
+#: .\orders\templates\orders\order\create.html:21
+msgid " Please, Select atleast one product to order."
+msgstr "Por favor, seleccione al menos un producto para ordenar."
+
+#: .\orders\templates\orders\order\create.html:29
 msgid "Back to Cart"
 msgstr "Volver al carrito"
 
-#: .\orders\templates\orders\order\create.html:28
+#: .\orders\templates\orders\order\create.html:32
 msgid "Order Summery"
 msgstr "Resumen del pedido"
 
-#: .\orders\templates\orders\order\create.html:39
-#, python-format
+#: .\orders\templates\orders\order\create.html:43
+#, fuzzy, python-format
+#| msgid ""
+#| "\n"
+#| "                \"%(code)s\" (%(discount)s%% off)\n"
+#| "              "
 msgid ""
 "\n"
 "                \"%(code)s\" (%(discount)s%% off)\n"
@@ -70,7 +78,7 @@ msgstr ""
 "\n"
 "\"%(code)s\" cupón (%(discount)s%% apagado)"
 
-#: .\orders\templates\orders\order\create.html:47
+#: .\orders\templates\orders\order\create.html:51
 msgid "Total"
 msgstr "Total"
 
@@ -80,8 +88,7 @@ msgstr "Gracias"
 
 #: .\orders\templates\orders\order\created.html:11
 msgid "Your order has been successfully completed. Your order number is"
-msgstr ""
-"Su orden ha sido completada satisfactoriamente. tu numero de orden es "
+msgstr "Su orden ha sido completada satisfactoriamente. tu numero de orden es "
 
 #: .\orders\templates\orders\order\created.html:12
 #, python-format
@@ -92,6 +99,18 @@ msgid ""
 msgstr ""
 "\n"
 "<strong>%(order_id)s</strong>Fechada%(order_created)s"
+
+#: .\orders\templates\orders\order\created.html:17
+msgid "Payment:"
+msgstr ""
+
+#: .\orders\templates\orders\order\created.html:19
+msgid "PAID"
+msgstr ""
+
+#: .\orders\templates\orders\order\created.html:21
+msgid "PENDING"
+msgstr ""
 
 #: .\orders\urls.py:9
 msgid "create/"

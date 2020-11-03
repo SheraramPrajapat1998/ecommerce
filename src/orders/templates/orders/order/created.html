@@ -11,6 +11,14 @@
   <p>{% trans 'Your order has been successfully completed. Your order number is' %}
     {% blocktrans with order_id=order.id order_created=order.created %}
       <strong>{{ order_id }}</strong> dated {{ order_created }}    
-    {% endblocktrans %}
+    {% endblocktrans %}    
+  </p>
+  <p>
+    {% trans 'Payment:' %} 
+    {% if order.paid %}
+      <b class="text-success"> {% trans 'PAID' %}</b> 
+    {% else %}
+      <b class="text-danger"> {% trans 'PENDING' %}</b> 
+    {% endif %}
   </p>
 {% endblock %}

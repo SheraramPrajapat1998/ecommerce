@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-03 10:02+0530\n"
+"POT-Creation-Date: 2020-11-03 21:24+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -47,19 +47,23 @@ msgstr ""
 msgid "Checkout"
 msgstr ""
 
-#: .\orders\templates\orders\order\create.html:18
+#: .\orders\templates\orders\order\create.html:19
 msgid "Place order"
 msgstr ""
 
-#: .\orders\templates\orders\order\create.html:25
+#: .\orders\templates\orders\order\create.html:21
+msgid " Please, Select atleast one product to order."
+msgstr ""
+
+#: .\orders\templates\orders\order\create.html:29
 msgid "Back to Cart"
 msgstr ""
 
-#: .\orders\templates\orders\order\create.html:28
+#: .\orders\templates\orders\order\create.html:32
 msgid "Order Summery"
 msgstr ""
 
-#: .\orders\templates\orders\order\create.html:39
+#: .\orders\templates\orders\order\create.html:43
 #, python-format
 msgid ""
 "\n"
@@ -67,7 +71,7 @@ msgid ""
 "              "
 msgstr ""
 
-#: .\orders\templates\orders\order\create.html:47
+#: .\orders\templates\orders\order\create.html:51
 msgid "Total"
 msgstr ""
 
@@ -85,6 +89,18 @@ msgid ""
 "\n"
 "      <strong>%(order_id)s</strong> dated %(order_created)s    \n"
 "    "
+msgstr ""
+
+#: .\orders\templates\orders\order\created.html:17
+msgid "Payment:"
+msgstr ""
+
+#: .\orders\templates\orders\order\created.html:19
+msgid "PAID"
+msgstr ""
+
+#: .\orders\templates\orders\order\created.html:21
+msgid "PENDING"
 msgstr ""
 
 #: .\orders\urls.py:9

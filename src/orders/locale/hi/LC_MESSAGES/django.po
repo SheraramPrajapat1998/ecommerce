@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-03 10:02+0530\n"
-"PO-Revision-Date: 2020-11-03 10:07+0553\n"
+"POT-Creation-Date: 2020-11-03 21:24+0530\n"
+"PO-Revision-Date: 2020-11-03 21:21+0553\n"
 "Last-Translator: b'  <>'\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -48,29 +48,31 @@ msgstr "शहर"
 msgid "Checkout"
 msgstr "चेक आउट"
 
-#: .\orders\templates\orders\order\create.html:18
+#: .\orders\templates\orders\order\create.html:19
 msgid "Place order"
 msgstr "ऑर्डर दें"
 
-#: .\orders\templates\orders\order\create.html:25
+#: .\orders\templates\orders\order\create.html:21
+msgid " Please, Select atleast one product to order."
+msgstr "कृपया, ऑर्डर करने के लिए कम से कम एक उत्पाद का चयन करें।"
+
+#: .\orders\templates\orders\order\create.html:29
 msgid "Back to Cart"
 msgstr "वापस कार्ट में"
 
-#: .\orders\templates\orders\order\create.html:28
+#: .\orders\templates\orders\order\create.html:32
 msgid "Order Summery"
 msgstr "आदेश सारांश"
 
-#: .\orders\templates\orders\order\create.html:39
+#: .\orders\templates\orders\order\create.html:43
 #, python-format
 msgid ""
 "\n"
 "                \"%(code)s\" (%(discount)s%% off)\n"
 "              "
 msgstr ""
-"\n"
-"\"%(code)s\" (%(discount)s%% छूट)"
 
-#: .\orders\templates\orders\order\create.html:47
+#: .\orders\templates\orders\order\create.html:51
 msgid "Total"
 msgstr "संपूर्ण"
 
@@ -79,28 +81,30 @@ msgid "Thank you"
 msgstr "धन्यवाद"
 
 #: .\orders\templates\orders\order\created.html:11
-#| msgid ""
-#| "\n"
-#| "    Your order has been successfully completed. Your order number is\n"
-#| "    <strong>%(order_id)s</strong> dated %(order_created|localize)s.    \n"
-#| "  "
 msgid "Your order has been successfully completed. Your order number is"
 msgstr "आपका ऑर्डर सफलतापूर्वक पूर्ण हो गया। आपका ऑर्डर नंबर है: "
 
 #: .\orders\templates\orders\order\created.html:12
 #, python-format
-#| msgid ""
-#| "\n"
-#| "    Your order has been successfully completed. Your order number is\n"
-#| "    <strong>%(order_id)s</strong> dated %(order_created|localize)s.    \n"
-#| "  "
 msgid ""
 "\n"
 "      <strong>%(order_id)s</strong> dated %(order_created)s    \n"
 "    "
 msgstr ""
 "\n"
-"<strong>%(order_id)s</strong> दिनांक%(order_created)s."
+"<strong>%(order_id)s</strong> दिनांक %(order_created)s."
+
+#: .\orders\templates\orders\order\created.html:17
+msgid "Payment:"
+msgstr "भुगतान:"
+
+#: .\orders\templates\orders\order\created.html:19
+msgid "PAID"
+msgstr "चुकाया हुआ"
+
+#: .\orders\templates\orders\order\created.html:21
+msgid "PENDING"
+msgstr "अपूर्ण"
 
 #: .\orders\urls.py:9
 msgid "create/"

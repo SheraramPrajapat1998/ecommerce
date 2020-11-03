@@ -15,7 +15,11 @@
           <form method="post" class="order-form">
             {{ form|crispy }}
             {% csrf_token %}
-            <input type="submit" class="btn btn-primary d-block" value="{% trans 'Place order' %}">
+            {% if cart|length > 0 %}
+              <input type="submit" class="btn btn-primary d-block" value="{% trans 'Place order' %}">
+            {% else %}
+              <p><b class="text-danger">{% trans ' Please, Select atleast one product to order.' %}</b></p>
+            {% endif %}
           </form>
         </div>
     </div>

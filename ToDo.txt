@@ -1,0 +1,15 @@
+ToDo List:
+
+1. Add Payment Integration
+    - maybe paypal or via other methods
+2. add asynchronous task using celery ex. while processing Payment
+
+3. Add search functionality
+
+4. Add accounts app: login, logout, register, change password and reset password functionality
+
+5. Add review app: Add Reviews from other users to a product
+
+
+6.. -- fix 
+    multiple orders are being generated after check out while resumittion

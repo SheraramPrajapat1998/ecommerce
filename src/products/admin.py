@@ -12,7 +12,7 @@ class CategoryAdmin(TranslatableAdmin):
     return {'slug': ('name',)}
 
 @admin.register(Product)
-class ProductAdmin(TranslatableAdmin):
+class ProductAdmin(AdminImageMixin, TranslatableAdmin):
   list_display = ['name', 'slug', 'price', 'available', 'created', 'updated']
   list_filter = ['available', 'created', 'updated']
   list_editable = ['price', 'available']
